@@ -1,0 +1,124 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<META NAME="Ly Tai" CONTENT="Ly Tai">
+<title>Lunar Calendar</title>
+<script src="amlich-hnd.js" type="text/javascript"></script>
+<script>
+<!--
+	showVietCal();
+-->
+</script>
+</head>
+<body onLoad="">
+
+<h1 align="center"> Âm lịch Việt Nam </h1>
+
+<div class="clear-float"></div> 
+
+<div class="container" id="main-content">
+
+<table align="center" cellspacing="1" border="0">
+
+<tr>
+<td align="center">
+
+<script language="JavaScript">
+<!--
+        setOutputSize("big");
+	document.writeln(printSelectedMonth());
+//-->
+</script>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<form name="SelectMonth" action="">
+Th&aacute;ng
+<select name="month">
+  <option value="1">1
+  <option value="2">2
+  <option value="3">3
+  <option value="4">4
+  <option value="5">5
+  <option value="6">6
+  <option value="7">7
+  <option value="8">8
+  <option value="9">9
+  <option value="10">10
+  <option value="11">11
+  <option value="12">12
+</select> &#160;&#160;&#160;&#160;
+N&#x103;m
+<INPUT NAME="year" size=5 value="2005"> &#160;
+
+<p>
+
+<input type="button" value="Xem l&#x1ECB;ch th&aacute;ng" onClick="javascript:viewMonth(parseInt(month.value), parseInt(year.value));">
+&#160;&#160;
+</form>
+
+<script type="text/javascript">
+<!--
+	getSelectedMonth();
+	document.SelectMonth.month.value = currentMonth;
+	document.SelectMonth.year.value = currentYear;
+	function viewMonth(mm, yy) {
+		window.location = window.location.pathname + '?yy='+yy+'&mm='+mm;
+	}
+	function viewYear(yy) {
+		var loc = 'currentyear.html?yy='+yy;
+		var win2702 = window.open(loc, "win2702", "menubar=yes,scrollbars=yes,resizable=yes");
+	}
+	
+//-->
+</script>
+
+</td>
+</tr>
+
+</table>
+</ul>
+</div>
+<!--
+<h3>Những thay đổi gần đây</h3>
+
+<ul>
+<li> 03/2005: Sửa lỗi bất tương thích với IE. Hiển thị giờ hoàng đạo. Sửa lỗi tính jdn
+<li> 09/2004: Công bố phiên bản 0.2
+</ul>
+-->
+<style type="text/css">
+
+/* general style & layout */
+body {
+    position: relative;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    color: #333;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    }
+
+#main-menu ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+#main-menu ul li {
+    float: left;
+    margin-right: 15px;
+}
+.clear-float {
+            clear: both;
+            }rồi
+</style>
+
+
+
+</body>
+</html>
